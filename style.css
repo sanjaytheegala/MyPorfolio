@@ -1,0 +1,322 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: black;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: black;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: orange;
+  
+}
+
+/* Hero Section */
+#hero {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+.hero-text a {
+  background-color: orange;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.hero-text a:hover {
+  background-color: darkorange;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-pic {
+  width: 185px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 4px solid orange;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+#profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Section Base */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid orange;
+  padding-bottom: 0.5rem;
+}
+
+/* Education */
+.edu-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 15px;
+}
+
+.edu-logo {
+  width: 60px;
+  height: auto;
+}
+
+.edu-info {
+  flex-grow: 1;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.edu-header strong {
+  font-size: 1.1rem;
+}
+
+.edu-year {
+  font-size: 1rem;
+  color: gray;
+}
+
+.edu-info p {
+  margin-top: 4px;
+  color: #444;
+}
+
+/* Skills Section */
+.skills h2 {
+  margin-top: 0;
+}
+
+.skills-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.skill-card {
+  flex: 1;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: whitesmoke;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skill-card:hover {
+  box-shadow: 0 0 15px orange;
+  transform: translateY(-5px);
+}
+
+.skill-card h4 {
+  margin-bottom: 0.7rem;
+  color: orange;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-card li {
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  border: 1px solid lightgray;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  background-color: whitesmoke;
+  transition: box-shadow 0.3s;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 10px orange;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: orange;
+}
+
+.project-card p {
+  margin-bottom: 0.5rem;
+  color: dimgray;
+}
+
+.project-card a {
+  background-color: orange;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.project-card a:hover {
+  background-color: darkorange;
+  box-shadow: 0 0 10px orange;
+}
+
+/* Contact */
+#contact p {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#contact a {
+  color: orange;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: orangered;
+  transition-duration: 0.5s;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: black;
+  color: white;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .skills-cards {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text a {
+    margin-bottom: 1rem;
+  }
+
+  #profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  #hero h2 {
+    font-size: 2rem;
+  }
+
+  .skills-cards {
+    flex-direction: column;
+  }
+}
